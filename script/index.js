@@ -1,20 +1,20 @@
 //Elementos 
-let buttonSkillsPrograming = document.getElementById('btn_programming_skills');
-let buttonSkillsMechatronic = document.getElementById('btn_mechatronic_skills');
-let divSkillsPrograming = document.querySelector('.programming_skills');
-let divSkillsMechatronic = document.querySelector('.mechatronic_skills');
+const buttonSkillsPrograming = document.getElementById('btn_programming_skills');
+const buttonSkillsMechatronic = document.getElementById('btn_mechatronic_skills');
+const divSkillsPrograming = document.querySelector('.programming_skills');
+const divSkillsMechatronic = document.querySelector('.mechatronic_skills');
 
-let buttonWebDevelopment = document.getElementById('btn_web_development_projects');
-let buttonMicrocontrollers = document.getElementById('btn_microcontrollers_projects');
-let buttonPython = document.getElementById('btn_python_projects');
-let buttonMechatronic = document.getElementById('btn_mechatronic_projects');
-let divWebDevelopment = document.querySelector('.web_development_projects');
-let divMicrocontrollers = document.querySelector('.microcontrollers_projects');
-let divPython = document.querySelector('.python_projects');
-let divMechatronic = document.querySelector('.mechatronic_projects');
+const buttonWebDevelopment = document.getElementById('btn_web_development_projects');
+const buttonMicrocontrollers = document.getElementById('btn_microcontrollers_projects');
+const buttonPython = document.getElementById('btn_python_projects');
+const buttonMechatronic = document.getElementById('btn_mechatronic_projects');
+const divWebDevelopment = document.querySelector('.web_development_projects');
+const divMicrocontrollers = document.querySelector('.microcontrollers_projects');
+const divPython = document.querySelector('.python_projects');
+const divMechatronic = document.querySelector('.mechatronic_projects');
 
-let imageModal = document.getElementById('modalImage');
-let modal = document.getElementById('modal');
+const imageModal = document.getElementById('modalImage');
+const modal = document.getElementById('modal');
 
 
 // Cuando se presiona el boton de programacion se muestra el div de programacion y se oculta el de mecatronica

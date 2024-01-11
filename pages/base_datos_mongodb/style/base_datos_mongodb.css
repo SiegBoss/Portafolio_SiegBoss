@@ -108,92 +108,64 @@ form label {
 }
 
 /*Pie de pagina | Footer*/
-.dark-section {
-    color: #f5f6f7;
-    background-color: #1b1b32;
-}
-
 footer {
-    min-height: 400px;
-}
-
-.footer-page {
-    margin-top: 200px;
-}
-
-.footer-icon {
+    min-height: 500px;
+    background-color: #1b1b32;
+    color: #fff;
+  }
+  
+  .footer_text_f{
+    font-size: 1.5rem;
+  }
+  
+  .footer_text{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+  }
+  
+  .footer_icon {
     height: 80px;
     width: 80px;
     margin: 10px;
-}
-
-.footer-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.social-media-icons a {
+  }
+  
+  .social_media_icons a {
     width: 50px;
     height: 50px;
-    padding: 2px;
-    margin: 10px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease-in;
+    padding: 2px;
+    margin: 10px;
     border: 2px solid white;
-}
-
-.social-media-icons i {
-    font-size: 1.5rem;
-    color: white;
+    border-radius: 50%;
     transition: all 0.2s ease-in;
-}
-
-.social-media-icons a:hover i {
+  }
+  
+  .social_media_icons i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .social_media_icons a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .social_media_icons a:hover i {
     color: black;
-}
-
-.Copyright {
+  }
+  
+  .Copyright {
     font-size: 15px;
-    padding: 20px;
     color: #aeaeae;
-}
-
-/* Estilos para pantallas más pequeñas | Styles for smaller screens */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 40px;
-        color: #3c3c3c;
-    }
-
-    form {
-        max-width: 80%;
-        margin-bottom: 20px;
-        padding: 10px;
-    }
-
-    form label {
-        font-size: 14px;
-    }
-
-    .input {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .button-add,
-    .button-delet,
-    .button-database {
-        width: 100%;
-        font-size: 14px;
-        margin-top: 15px;
-    }
-}
+    padding: 20px;
+  }
+  
+  .contact button:hover i {
+    color: black;
+  }
+  
+  
