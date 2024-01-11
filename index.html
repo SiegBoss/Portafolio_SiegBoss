@@ -14,11 +14,10 @@
     <!--Icono | Icon-->
     <link rel="icon" type="image/x-icn" href="./images/Round_Willy_Logo.png">
     <!-- Enlazar a Bootstrap | Link to Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Enlazar a CSS | Link to CSS -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style/index.css">
     <!--Tipografias | Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +31,12 @@
     <!-- navbar-expand-md:  BTP se utiliza para controlar cuándo el contenido de la barra de navegación debe colapsarse en un botón 
                             navbar-expand-md hace que el contenido de la barra de navegación se colapse en pantallas pequeñas (menos de 768px de ancho) -->
     <nav class="navbar navbar-expand-md">
-
         <!-- container-fluid: BTP se utiliza para crear un contenedor que abarca el 100% del ancho de la pantalla. -->
         <div class="container-fluid">
             <!-- navbar-toggler: BTP este es un botón que se muestra cuando el contenido de la barra de navegación está colapsado  -->
             <!-- data-bs-toggle="collapse" : BTP este atributo de datos se utiliza para controlar el comportamiento de colapso y expansión del contenido vinculado -->
             <!-- data-bs-target="#navbarTogglerDemo03":  BTP este atributo de datos se utiliza para vincular el botón de hamburguesa con el contenido que debe expandirse o colapsarse. -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo03">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03">
                 <div class="custom_toggler_icon">
                     <span></span>
                     <span></span>
@@ -56,7 +53,7 @@
                 <!-- align-items-center: BPT se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
                 <ul class="navbar-nav d-flex justify-content-end align-items-center">
                     <!-- nav-item:  BTP se utiliza para crear un elemento de la barra de navegación. 
-                                    Cada elemento del menú en una barra de navegación de Bootstrap será un nav-item, que contiene un enlace -->
+                                    Cada elemento del menú en una barra de navegación de Bootstrap será un nav-link, que contiene un enlace -->
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre_mi">Sobre Mí</a>
                     </li>
@@ -67,14 +64,13 @@
                         <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contacto">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-------------------------->
-
 
     <!-------------------------->
     <!-- Seccion Hero -->
@@ -91,7 +87,9 @@
             <div class="hero_left">
                 <h1>Hola, Soy William</h1>
                 <h2>Soy Ingeniero Mecatrónico Jr y Programador Jr</h2>
-                <button>Mí CV</button>
+                <button>
+                    <a href="./documents/Curriculum CV .pdf" download="Curriculum_CV" target="_blank" rel="noopener noreferrer">Descargar Mí CV</a>
+                </button>
             </div>
             <div class="hero_right">
                 <img class="hero_image" src="./images/PC.svg" alt="Monitor">
@@ -108,11 +106,10 @@
         <div class="container">
             <h2 class="title">HACERCA DE MÍ</h2>
             <p class="text_section">
-                Soy Ingeniero Mecatrónico Jr con habilidades en diseño mecánico, electrónico y
-                sistemas de control. Mi pasión por la programación me ha llevado estudiar diversos tipos de lenguajes
-                como Python, Java, JavaScript así como también aprender HTML, CSS y bases de datos en SQL.
-                Mi meta es crecer profesionalmente mientras aporto valor a la organización con mis habilidades,
-                dedicación y capacidad para trabajar en equipo y adaptarme a nuevas tecnologías.
+                Soy un Ingeniero Mecatrónico Jr con habilidades en Programación. 
+                Me fascina el mundo digital y veo un futuro prometedor en la integración de la mecatrónica con la tecnología de la información. 
+                Siempre estoy en la búsqueda de adquirir nuevos conocimientos y asi aportar valor a cualquier equipo. 
+                Mi meta es crecer profesionalmente, adaptándome a las tendencias y manteniéndome a la vanguardia en mi campo.
             </p>
         </div>
     </section>
@@ -122,13 +119,20 @@
     <!-------------------------->
     <!--Mis Habilidades-->
     <section id="habilidades" class="my_skills">
+        <!-- container: BTP se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
         <div class="container">
-            <h1 class="title">Habilidades</h1>
-            <div class="button-container">
-                <button id="btn-programming" class="btn active">Programación</button>
-                <button id="btn-mechatronic" class="btn">Mecatrónica</button>
+            <h1 class="title">HABILIDADES</h1>
+
+            <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
+            <!-- flex-column: BTP esta clase se utiliza para orientar los elementos flex en una columna -->
+            <!-- flex-md-row: BTP esta clase se utiliza para orientar los elementos flex en una fila cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
+            <div class="button_container d-flex flex-column flex-md-row">
+                <!-- btn : BTP se utiliza para crear un botón. -->
+                <!-- active : BTP esta clase se utiliza para resaltar el botón activo. -->
+                <button id="btn_programming_skills" class="btn active">Programación</button>
+                <button id="btn_mechatronic_skills" class="btn">Mecatrónica</button>
             </div>
-            <div class="programming">
+            <div class="programming_skills">
                 <div class="skill">
                     <img src="./images/Python.svg" alt="Logo de Javascript">
                     <span>Python</span>
@@ -175,7 +179,7 @@
                 </div>
             </div>
 
-            <div class="mechatronic">
+            <div class="mechatronic_skills">
                 <div class="skill">
                     <img src="./images/LabView.svg" alt="Logo de Javascript">
                     <span>LabView</span>
@@ -183,6 +187,10 @@
                 <div class="skill">
                     <img src="./images/SolidWorks.png" alt="Logo de Javascript">
                     <span>SolidWorks</span>
+                </div>
+                <div class="skill">
+                    <img src="./images/Matlab.svg" alt="Logo de Javascript">
+                    <span>Matlab</span>
                 </div>
                 <div class="skill">
                     <img src="./images/PLC.png" alt="Logo de Javascript">
@@ -194,11 +202,7 @@
                 </div>
                 <div class="skill">
                     <img src="./images/Microcontrolador.png" alt="Logo de Javascript">
-                    <span>Microcontrolador</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/Matlab.svg" alt="Logo de Javascript">
-                    <span>Matlab</span>
+                    <span>Microcontroladores</span>
                 </div>
             </div>
         </div>
@@ -218,404 +222,403 @@
         <div class="container text-center">
             <!-- row : BTP se utiliza para crear una fila. -->
             <div class="row">
-                <h2>Desarrollo Web</h2>
-                <!-- 1 -->
-                <!-- col-12 : BTP se utiliza para crear una columna que ocupa 12 espacios en una fila. -->
-                <!-- col-md-6 : BTP se utiliza para crear una columna que ocupa 6 espacios en una fila en pantallas medianas. -->
-                <!-- col-lg-4 : BTP se utiliza para crear una columna que ocupa 4 espacios en una fila en pantallas grandes. -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/HTML_CSS_JavaScript_Calculator.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Calculadora Basica</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Calculator" target="_blank"
-                                    rel="noopener noreferrer">
+                <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
+                <!-- flex-column: BTP esta clase se utiliza para orientar los elementos flex en una columna -->
+                <!-- flex-md-row: BTP esta clase se utiliza para orientar los elementos flex en una fila cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
+                <div class="button_container d-flex flex-column flex-md-row">
+                    <!-- btn : BTP se utiliza para crear un botón. -->
+                    <!-- active : BTP esta clase se utiliza para resaltar el botón activo. -->
+                    <button id="btn_web_development_projects" class="btn active">Desarrollo Web</button>
+                    <button id="btn_microcontrollers_projects" class="btn">Microcontroladores</button>
+                    <button id="btn_python_projects" class="btn">Python</button>
+                    <button id="btn_mechatronic_projects" class="btn">Mecatrónica</button>
+                </div>
 
-                                    <!-- bi bi-github : Este es un componente de Bootstrap que crea un icono de GitHub. -->
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/" target="_blank"
-                                    rel="noopener noreferrer">
+                <!--Desarrollo Web-->
+                <!-- row : BTP se utiliza para crear una fila. -->
+                <div class="web_development_projects row">
+                    <!-- 1 -->
+                    <!-- col-12: BTP se utiliza para crear una columna que ocupa 12 espacios de cuadrícula. -->
+                    <!-- col-md-6: BTP se utiliza para crear una columna que ocupa 6 espacios de cuadrícula cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
+                    <!-- col-lg-4: BTP se utiliza para crear una columna que ocupa 4 espacios de cuadrícula cuando la ventana del navegador tiene un ancho grande (lg) o mayor. -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/HTML_CSS_JavaScript_Calculator.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Calculadora Basica</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Calculator" target="_blank" rel="noopener noreferrer">
+                                        <!-- bi bi-github: BTP que crea un icono de GitHub. -->
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/" target="_blank" rel="noopener noreferrer">
+                                        <!-- bi bi-laptop: BTP crea un icono de computadora portátil. -->
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                    <!-- bi bi-laptop : Este es un componente de Bootstrap que crea un icono de laptop. -->
-                                    <i class="bi bi-laptop"></i>
-                                </a>
+                    <!-- 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/HTML_CSS_JavaScript_Card_Game.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Memorama</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Card_Game" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Card_Game/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/HTML_CSS_JavaScript_Caesar_Cipher.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Cifrado César</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Caesar_Cipher"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Caesar_Cipher/"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/HTML_CSS_JavaScript_Solar_System.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Sistema Solar</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/HTML_and_CSS_Solar_System" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_and_CSS_Solar_System/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/HTML_CSS_JavaScript_MongoDB.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Bases de Datos con Node JS </p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_MongoDB" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="./pages/base_datos_mongodb/base_datos_mongodb.html" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/HTML_CSS_JavaScript_Login_and_Register.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Inciar Sesión y Registrarse con Node JS</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Login_and_Register"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="./pages/login_and_register/login_and_register.html" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/HTML_CSS_JavaScript_Card_Game.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Memorama</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Card_Game" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Card_Game/" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-laptop"></i>
-                                </a>
+                <!--Microcontroladores-->
+                <div class="microcontrollers_projects row">
+                    <!-- 1 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Diagram_Reading_Storage_Temperature.png" alt="Proyecto 2">
+                            <div class="overlay">
+                                <p>Lectura de una Memoria EEPROM</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/PIC_Reading_Storage_Temperature"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Diagram_Digital_Clock.png" alt="Proyecto 4">
+                            <div class="overlay">
+                                <p>Reloj Digital</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/PIC_Digital_Clock" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Diagram_Servomotor_Matrix_Keyboard.png" alt="Proyecto 3">
+                            <div class="overlay">
+                                <p>Control de un Servomotor</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/PIC_Servomotor_Matrix_Keyboard" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Diagram_DC_Motor_Control_RS232.png" alt="Proyecto 5">
+                            <div class="overlay">
+                                <p>Comunicación <br> RS-232 </p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/PIC_DC_Motor_Control_RS232" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Diagram_Password.png" alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Sistema de Seguridad</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/PIC_Password" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Diagram_Reading_3_LM35_Sensors.png " alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Lectura de 3 Sensores</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/PIC_3_LM35_Sensors" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/HTML_CSS_JavaScript_Caesar_Cipher.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Cifrado César</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Caesar_Cipher" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Caesar_Cipher/" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-laptop"></i>
-                                </a>
+                <!--Python-->
+                <div class="python_projects row">
+                    <!-- 1 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Python_Password.png" alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Generador de Contraseñas Aleatorias</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/Python_Password_Generator" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 4 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/HTML_CSS_JavaScript_Solar_System.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Sistema Solar</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_and_CSS_Solar_System" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://siegboss.github.io/HTML_and_CSS_Solar_System/" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-laptop"></i>
-                                </a>
+                    <!-- 2 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Python_Calculator.png" alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Calculadora Basica</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/Python_Calculator" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 5 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/HTML_CSS_JavaScript_MongoDB.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Bases de Datos con Node JS </p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_MongoDB" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="./pages/base_datos_mongodb.html" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-laptop"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/HTML_CSS_JavaScript_Login_and_Register.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Inciar Sesión y Registrarse con Node JS</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Login_and_Register"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                                <a href="./pages/login_and_register.html" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-laptop"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Microcontroladores</h2>
-
-                <!-- 1 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Diagram_Reading_Storage_Temperature.png" alt="Proyecto 2">
-                        <div class="overlay">
-                            <p>Lectura de una Memoria EEPROM</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/PIC_Reading_Storage_Temperature" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Diagram_Digital_Clock.png" alt="Proyecto 4">
-                        <div class="overlay">
-                            <p>Reloj Digital</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/PIC_Digital_Clock" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Diagram_Servomotor_Matrix_Keyboard.png" alt="Proyecto 3">
-                        <div class="overlay">
-                            <p>Control de un Servomotor</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/PIC_Servomotor_Matrix_Keyboard" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Diagram_DC_Motor_Control_RS232.png" alt="Proyecto 5">
-                        <div class="overlay">
-                            <p>Comunicación <br> RS-232 </p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/PIC_DC_Motor_Control_RS232" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 5 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Diagram_Password.png" alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Sistema de Seguridad</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/PIC_Password" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Diagram_Reading_3_LM35_Sensors.png " alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Lectura de 3 Sensores</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/PIC_3_LM35_Sensors" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Python</h2>
-
-                <!-- 1 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Python_Password.png" alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Generador de Contraseñas Aleatorias</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/Python_Password_Generator" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Python_Calculator.png" alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Calculadora Basica</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/Python_Calculator" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Python_and_SQLite_User_Manager.png " alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Base de Datos en SQLite</p>
-                            <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/Python_and_SQLite_User_Manager" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="bi bi-github"></i>
-                                </a>
+                    <!-- 3 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Python_and_SQLite_User_Manager.png " alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Base de Datos en SQLite</p>
+                                <div class="container-icons">
+                                    <a href="https://github.com/SiegBoss/Python_and_SQLite_User_Manager" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!--Mecatronica-->
-                <h2>Mecatrónica</h2>
+                <div class="mechatronic_projects row">
+                    <!-- 1 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Sorting_Machine.JPG" alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Cinta Transportadora SolidWorks </p>
+                                <div class="container-icons">.
+                                    <div>
+                                        <i class="bi bi-image" onclick="openModal('images/Sorting_Machine.JPG')"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- 1 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Sorting_Machine.JPG" alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Cinta Transportadora SolidWorks </p>
-                            <div class="container-icons">.
-                                <div>
-                                    <i class="bi bi-image" onclick="openModal('images/Sorting_Machine.JPG')"></i>
+                    <!-- 2 -->
+                    <div class=" col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/Marmita.JPG" alt="Proyecto 6">
+                            <div class="overlay">
+                                <p>Marmita SolidWorks</p>
+                                <div class="container-icons">
+                                    <div>
+                                        <i class="bi bi-image" onclick="openModal('images/Marmita.JPG')"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects">
+                            <img src="images/LabVIEW.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Sistema SCADA con LabVIEW</p>
+                                <div class="container-icons">
+                                    <a href="./pages/labview_scada_marmita/labview_scada_marmita.html" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-images"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- 2 -->
-                <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/Marmita.JPG" alt="Proyecto 6">
-                        <div class="overlay">
-                            <p>Marmita SolidWorks</p>
-                            <div class="container-icons">
-                                <div>
-                                    <i class="bi bi-image" onclick="openModal('images/Marmita.JPG')"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="projects">
-                        <img src="images/LabVIEW.png" alt="Proyecto 1">
-                        <div class="overlay">
-                            <p>Sistema SCADA con LabVIEW</p>
-                            <div class="container-icons">
-                                <a href="pages/labview.html" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-images"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modal -->
-                <div class="modal" id="modal">
-                    <span onclick="closeModal()" class="close-button">&times;</span>
-                    <img src="" id="modalImage" alt="Imágen Ampliada">
-                </div>
-
-                <!-- Mas Proyectos -->
-                <a href="https://github.com/SiegBoss?tab=repositories" target="_blank" rel="noopener noreferrer">
-
-                    <!-- btn : Esta es una clase de Bootstrap que se utiliza para crear un botón. -->
-                    <!-- btn-info : Esta es una clase de Bootstrap que se utiliza para crear un botón de color azul. -->
-                    <button type="button" class="btn btn-info">Ver mas Proyectos
-
-                        <!-- bi bi-arrow-right-circle-fill : Este es un componente de Bootstrap que crea un icono de flecha. -->
-                        <i class="bi bi-arrow-right-circle-fill"></i>
-                    </button>
-                </a>
-
             </div>
+
+            <!-- Modal -->
+            <div class="modal" id="modal">
+                <span onclick="closeModal()" class="close-button">&times;</span>
+                <img src="" id="modalImage" alt="Imágen Ampliada">
+            </div>
+
+            <!-- Mas Proyectos -->
+            <a href="https://github.com/SiegBoss?tab=repositories" target="_blank" rel="noopener noreferrer">
+
+                <!-- btn : Esta es una clase de Bootstrap que se utiliza para crear un botón. -->
+                <button type="button" class="btn btn_info">Ver mas Proyectos
+                    <!-- bi bi-arrow-right-circle-fill : Este es un componente de Bootstrap que crea un icono de flecha. -->
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </a>
+        </div>
+        </div>
     </section>
     <!-------------------------->
 
-
+    <!-------------------------->
     <!--Pie de Pagina-->
-
-    <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
-    <!-- flex-column : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
-    <!-- align-items-center : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
-    <!-- justify-content-center : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la sección en el centro. -->
-    <footer class="dark-section d-flex flex-column align-items-center justify-content-center">
-
-        <img class="footer-icon" src="images/round_willy_logo.png" alt="Logo de la Pagina">
-
-        <!-- text-center : Esta es una clase de Bootstrap que se utiliza para alinear el texto en el centro. -->
-        <p class="footer-text text-center">Tu versión de mañana debería poder vencer a tú versión de hoy</p>
-
-        <p class="footer-text text-center">Contactame</p>
-
-        <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
-        <!-- flex-wrap : Esta es una clase de Bootstrap que se utiliza para envolver los elementos de la sección. -->
-        <!-- align-items-center : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
-        <!-- justify-content-center : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la sección en el centro. -->
-        <div class="social-media-icons d-flex flex-wrap align-items-center justify-content-center">
-
+    <!-- D-flex: BTP se utiliza para crear un contenedor flexible. -->
+    <!-- flex-column: BTP esta clase se utiliza para orientar los elementos flex en una columna -->
+    <!-- align-items-center: BPT se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
+    <!-- justify-content-center: BTP se utiliza para alinear los elementos flexibles a lo largo del eje principal -->
+    <footer id="contacto" class="d-flex flex-column align-items-center justify-content-center">
+        <img class="footer_icon" src="images/round_willy_logo.png" alt="Logo de la Pagina">
+        <!-- text-center: BTP esta clase se utiliza para alinear el texto en el centro.. -->
+        <p class="text-center">Tu versión de mañana debería poder vencer a tú versión de hoy</p>
+        <!-- text-center: BTP esta clase se utiliza para alinear el texto en el centro.. -->
+        <p class="footer_text text-center">Contactame</p>
+        <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
+        <!-- flex-wrap: BTP esta clase se utiliza para permitir que los elementos flexibles se envuelvan en varias líneas. -->
+        <!-- align-items-center: BPT se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
+        <!-- justify-content-center: BTP se utiliza para alinear los elementos flexibles a lo largo del eje principal -->
+        <div class="social_media_icons d-flex flex-wrap align-items-center justify-content-center">
             <a href="https://twitter.com/SiegBoss" target="_blank" rel="noopener noreferrer">
-
-                <!-- bi bi-twitter-x : Este es un componente de Bootstrap que crea un icono de Twitter. -->
+                <!-- bi bi-twitter-x : BTP que crea un icono de Twitter. -->
                 <i class="bi bi-twitter-x"></i>
             </a>
             <a href="https://www.instagram.com/siegboss_xp/" target="_blank" rel="noopener noreferrer">
-
-                <!-- bi bi-instagram : Este es un componente de Bootstrap que crea un icono de Instagram. -->
+                <!-- bi bi-instagram : BTP que crea un icono de Instagram. -->
                 <i class="bi bi-instagram"></i>
             </a>
             <a href="https://github.com/SiegBoss" target="_blank" rel="noopener noreferrer">
-
-                <!-- bi bi-github : Este es un componente de Bootstrap que crea un icono de GitHub. -->
+                <!-- bi bi-github : BTP que crea un icono de GitHub. -->
                 <i class="bi bi-github"></i>
             </a>
             <a href="https://www.tiktok.com/@siegboss" target="_blank" rel="noopener noreferrer">
-
-                <!-- bi bi-tiktok : Este es un componente de Bootstrap que crea un icono de TikTok. -->
+                <!-- bi bi-tiktok : BTP que crea un icono de TikTok. -->
                 <i class="bi bi-tiktok"></i>
             </a>
         </div>
-
         <div class="Copyright">
-            creado por SiegBoss &#169; 2023
+            creado por SiegBoss &#169; 2024
         </div>
-
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./script/index.js"></script>
 </body>
-
 </html>
