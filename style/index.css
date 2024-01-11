@@ -314,8 +314,8 @@ footer p {
 
 .projects {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 105%;
 }
 
 .projects:hover img {
@@ -330,7 +330,6 @@ footer p {
     position: absolute;
     transform: translate(-50%, -50%);
     transition: all 0.2s ease;
-
 }
 
 .overlay p {
