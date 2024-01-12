@@ -331,7 +331,6 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .skills_projects p {
@@ -349,10 +348,6 @@ footer p {
     }
     .col-md-6, .col-lg-4 {
         width: 100%;
-    }
-
-    .skills_projects {
-        flex-direction: column;
     }
 
     .skills_projects p {
@@ -394,17 +389,15 @@ footer p {
     margin: 20px;
     margin-top: 25px;
 }
-
-.microcontrollers_projects {
-    display: none;
+.web_development_projects {
+    margin: auto;
 }
 
-.python_projects {
-    display: none;
-}
-
+.microcontrollers_projects,
+.python_projects,
 .mechatronic_projects {
     display: none;
+    margin: auto;
 }
 
 .gallery {
