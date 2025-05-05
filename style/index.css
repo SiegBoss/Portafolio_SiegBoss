@@ -171,7 +171,7 @@ footer p {
 
 .about_me .text_section {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: justify;
     line-height: 1.5;
     color: #FFFFFF;
 }
@@ -228,8 +228,7 @@ footer p {
     color: white;
 }
 
-.programming_skills,
-.mechatronic_skills {
+.programming_skills {
     width: 100%;
     margin-top: 25px;
     display: flex;
@@ -393,12 +392,6 @@ footer p {
     margin: auto;
 }
 
-.microcontrollers_projects,
-.python_projects,
-.mechatronic_projects {
-    display: none;
-    margin: auto;
-}
 
 .gallery {
     display: grid;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <!--Metadatos | Metadata-->
@@ -12,10 +12,9 @@
     <!--Titulo | Title-->
     <title>SiegBoss | Portafolio</title>
     <!--Icono | Icon-->
-    <link rel="icon" type="image/x-icn" href="./images/round_willy_logo.png">
+    <link rel="icon" type="image/x-icn" href="./images/logo_willy.png">
     <!-- Enlazar a Bootstrap | Link to Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Enlazar a CSS | Link to CSS -->
     <link rel="stylesheet" href="./style/index.css">
@@ -27,16 +26,8 @@
 
 <body>
     <!-------------------------->
-    <!-- Barra de Navegacion -->
-    <!-- navbar: BTP se utiliza para crear una barra de navegación. -->
-    <!-- navbar-expand-md:  BTP se utiliza para controlar cuándo el contenido de la barra de navegación debe colapsarse en un botón 
-                            navbar-expand-md hace que el contenido de la barra de navegación se colapse en pantallas pequeñas (menos de 768px de ancho) -->
     <nav class="navbar navbar-expand-md">
-        <!-- container-fluid: BTP se utiliza para crear un contenedor que abarca el 100% del ancho de la pantalla. -->
         <div class="container-fluid">
-            <!-- navbar-toggler: BTP este es un botón que se muestra cuando el contenido de la barra de navegación está colapsado  -->
-            <!-- data-bs-toggle="collapse" : BTP este atributo de datos se utiliza para controlar el comportamiento de colapso y expansión del contenido vinculado -->
-            <!-- data-bs-target="#navbarTogglerDemo03":  BTP este atributo de datos se utiliza para vincular el botón de hamburguesa con el contenido que debe expandirse o colapsarse. -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo03">
                 <div class="custom_toggler_icon">
@@ -45,17 +36,8 @@
                     <span></span>
                 </div>
             </button>
-            <!-- collapse: BTP esta clase se utiliza para crear un contenedor que puede expandirse y colapsarse -->
-            <!-- navbar-collapse: BTP esta clase se utiliza junto con la clase collapse para agrupar y ocultar contenidos de la barra de navegación según un punto de interrupción principal-->
-            <!-- justify-content-end : BTP se utiliza para alinear los elementos flexibles al final del eje principal-->
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-                <!-- navbar-nav: BTP se utiliza para crear una lista no ordenada de elementos de la barra de navegación.-->
-                <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
-                <!-- justify-content-end: BTP se utiliza para alinear los elementos flexibles al final del eje principal-->
-                <!-- align-items-center: BPT se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
                 <ul class="navbar-nav d-flex justify-content-end align-items-center">
-                    <!-- nav-item:  BTP se utiliza para crear un elemento de la barra de navegación. 
-                                    Cada elemento del menú en una barra de navegación de Bootstrap será un nav-link, que contiene un enlace -->
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre_mi">Sobre Mí</a>
                     </li>
@@ -65,9 +47,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -76,19 +55,11 @@
 
     <!-------------------------->
     <!-- Seccion Hero -->
-    <!-- hero: BTP es un tipo de componente que se utiliza para destacar contenido o información importante en una página web. -->
-    <!-- align-items-stretch: BTP se utiliza para estirar los elementos para llenar el contenedor flexible -->
     <section class="hero align-items-stretch">
-        <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
-        <!-- flex-column y flex-md-row: BTP controlan la dirección de los elementos flexibles. 
-                                        flex-column hace que los elementos se apilen verticalmente, mientras que 
-                                        flex-md-row hace que los elementos se apilen horizontalmente cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
-        <!-- justify-content-center: BTP se utiliza para alinear los elementos flexibles a lo largo del eje principal -->
-        <!-- align-items-center: BTP se utiliza para cambiar la alineación de los elementos flexibles a lo largo del eje transversal -->
         <div class="hero_main d-flex flex-column  flex-md-row  justify-content-center align-items-center">
             <div class="hero_left">
                 <h1>Hola, Soy William</h1>
-                <h2>Soy Ingeniero Mecatrónico Jr y Programador Jr</h2>
+                <h2>Soy Programador Jr</h2>
                 <button>
                     <a href="./documents/William_Reyes_Curriculum_CV.pdf" download="Curriculum_CV" target="_blank"
                         rel="noopener noreferrer">Descargar Mí CV</a>
@@ -101,45 +72,26 @@
     </section>
     <!-------------------------->
 
-
     <!-------------------------->
     <!--Hacerca de Mi-->
     <section id="sobre_mi" class="about_me">
-        <!-- container: BTP se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
         <div class="container">
             <h2 class="title">HACERCA DE MÍ</h2>
             <p class="text_section">
-                Soy un Ingeniero Mecatrónico Jr. con habilidades en programación.
-                Me apasiona el mundo digital y veo un futuro prometedor en la integración de la mecatrónica con la
-                tecnología de la información.
-                Estoy constantemente en la búsqueda de adquirir nuevos conocimientos para aportar valor a cualquier
-                equipo en el que participe.
-                Mi objetivo es crecer profesionalmente, adaptándome a las tendencias y manteniéndome a la vanguardia en
-                mi campo. Me fascina mi carrera
-                y la programación y creo firmemente que ambas disciplinas se complementan muy bien y tienen un gran
-                futuro.
+                Ingeniero Mecatrónico con experiencia en programación en diversos lenguajes como Python, Java, C y JavaScript,
+                así como en desarrollo web con HTML y CSS. Poseo habilidades en la implementación de sistemas, el manejo de
+                bases de datos y el control de versiones con Git. Me adapto rápidamente a nuevas tecnologías y estoy
+                comprometido con la creación de soluciones de software eficientes y de alta calidad.
             </p>
         </div>
     </section>
     <!-------------------------->
 
-
     <!-------------------------->
     <!--Mis Habilidades-->
     <section id="habilidades" class="my_skills">
-        <!-- container: BTP se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
         <div class="container">
             <h1 class="title">HABILIDADES</h1>
-
-            <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
-            <!-- flex-column: BTP esta clase se utiliza para orientar los elementos flex en una columna -->
-            <!-- flex-md-row: BTP esta clase se utiliza para orientar los elementos flex en una fila cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
-            <div class="button_container d-flex flex-column flex-md-row">
-                <!-- btn : BTP se utiliza para crear un botón. -->
-                <!-- active : BTP esta clase se utiliza para resaltar el botón activo. -->
-                <button id="btn_programming_skills" class="btn active">Programación</button>
-                <button id="btn_mechatronic_skills" class="btn">Mecatrónica</button>
-            </div>
             <div class="programming_skills">
                 <div class="skill">
                     <img src="./images/python.svg" alt="Logo de Javascript">
@@ -166,75 +118,12 @@
                     <span>CSS</span>
                 </div>
                 <div class="skill">
-                    <img src="./images/bootstrap.svg" alt="Logo de Javascript">
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/node js.svg" alt="Logo de Javascript">
-                    <span>Node.js</span>
-                </div>
-                <div class="skill">
                     <img src="./images/mongodb.svg" alt="Logo de Javascript">
                     <span>MongoDB</span>
                 </div>
                 <div class="skill">
                     <img src="./images/sqlite.svg" alt="Logo de Javascript">
                     <span>SQLite</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/mysqlworkbench.svg" alt="Logo de Javascript">
-                    <span>MYSQLWork</span>
-                </div>
-            </div>
-
-            <div class="mechatronic_skills">
-                <div class="skill">
-                    <img src="./images/labview.svg" alt="Logo de Javascript">
-                    <span>LabView</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/solidworks.png" alt="Logo de Javascript">
-                    <span>SolidWorks</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/autocad.svg" alt="Logo de Javascript">
-                    <span>AutoCAD</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/plc.png" alt="Logo de Javascript" class="rounded-5">
-                    <span>PLC Delta</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/hmi.png" alt="Logo de Javascript">
-                    <span>HMI Delta</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/microcontrolador.png" alt="Logo de Javascript">
-                    <span>Microcontroladores</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/proteus.png" alt="Logo de Javascript">
-                    <span>Proteus</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/pneumatics.png" alt="Logo de Javascript">
-                    <span>Hidráulica</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/hydraulics.png" alt="Logo de Javascript">
-                    <span>Neumática</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/industrial_maintenance.png" alt="Logo de Javascript">
-                    <span>Mantenimiento</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/automation_industrial_processes.png" alt="Logo de Javascript" class="rounded-5">
-                    <span>Automatizacion</span>
-                </div>
-                <div class="skill">
-                    <img src="./images/cnc.png" alt="Logo de Javascript" class="rounded-5">
-                    <span>CNC</span>
                 </div>
             </div>
         </div>
@@ -244,69 +133,37 @@
 
     <!-------------------------->
     <!-- Proyectos -->
-    <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
-    <!-- flex-column: BTP esta clase se utiliza para orientar los elementos flex en una columna -->
     <section id="proyectos" class="recent_projects d-flex flex-column">
         <h2 class="title">MIS PROYECTOS</h2>
-        <!--Galeria de Proyectos-->
-        <!-- container:  BTP esta clase se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
-        <!-- text-center: BTP esta clase se utiliza para alinear el texto en el centro.. -->
         <div class="container text-center">
             <!-- row : BTP se utiliza para crear una fila. -->
             <div class="row">
-                <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
-                <!-- flex-column: BTP esta clase se utiliza para orientar los elementos flex en una columna -->
-                <!-- flex-md-row: BTP esta clase se utiliza para orientar los elementos flex en una fila cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
-                <div class="button_container d-flex flex-column flex-md-row">
-                    <!-- btn : BTP se utiliza para crear un botón. -->
-                    <!-- active : BTP esta clase se utiliza para resaltar el botón activo. -->
-                    <button id="btn_web_development_projects" class="btn active">Desarrollo Web</button>
-                    <button id="btn_microcontrollers_projects" class="btn">Microcontroladores</button>
-                    <button id="btn_python_projects" class="btn">Python</button>
-                    <button id="btn_mechatronic_projects" class="btn">Mecatrónica</button>
-                </div>
 
                 <!--Desarrollo Web-->
-                <!-- row : BTP se utiliza para crear una fila. -->
                 <div class="web_development_projects row">
+
                     <!-- 1 -->
-                    <!-- col-12: BTP se utiliza para crear una columna que ocupa 12 espacios de cuadrícula. -->
-                    <!-- col-md-6: BTP se utiliza para crear una columna que ocupa 6 espacios de cuadrícula cuando la ventana del navegador tiene un ancho mediano (md) o mayor. -->
-                    <!-- col-lg-4: BTP se utiliza para crear una columna que ocupa 4 espacios de cuadrícula cuando la ventana del navegador tiene un ancho grande (lg) o mayor. -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="projects_container">
                             <div class="project">
                                 <div class="image_placeholder">
                                     <img src="./images/html_css_javascript_login_and_register_v2.png" alt="Project Image">
                                 </div>
-                                <div class="title_projects">Inicio de Sesión y Registro con Node.js V2</div>
+                                <div class="title_projects">Inicio de Sesión (En Proceso )V2</div>
                                 <div class="text_projects">
                                     <p>
-                                        Este proyecto es un Sistema Web de Autenticación de Usuarios Version 2.
-                                        Se ha desarrollado tanto el Frontend como el Backend.
-                                    </p>
-                                    <p>
-                                        (La pagina se subio GitHub asi que no funciona el Backend)
+                                        
                                     </p>
                                 </div>
                                 <div class="skills_projects">
                                     <p>HTML</p>
                                     <p>CSS</p>
                                     <p>JavaScript</p>
-                                    <p>MongoDB</p>
-                                    <p>Node.js</p>
-                                    <p>Express.js</p>
-                                    <p>Mongoose</p>
-                                    <p>bcrypt</p>
                                 </div>
                                 <div class="project_links">
                                     <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Login_and_Register_V2"
                                         target="_blank" rel="noopener noreferrer">
                                         <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="./pages/login_and_register_v2/login_and_register_v2.html"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
                                     </a>
                                 </div>
                             </div>
@@ -314,6 +171,72 @@
                     </div>
                     
                     <!-- 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects_container">
+                            <div class="project">
+                                <div class="image_placeholder">
+                                    <img src="./images/html_css_javascript_mongodb.png" alt="Project Image">
+                                </div>
+                                <div class="title_projects">Sistema de Gestión de Usuarios (En Proceso)</div>
+                                <div class="text_projects">
+                                    <p>
+
+                                    </p>
+                                </div>
+                                <div class="skills_projects">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="project_links">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_MongoDB" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="./pages/base_datos_mongodb/base_datos_mongodb.html" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects_container">
+                            <div class="project">
+                                <div class="image_placeholder">
+                                    <img src="./images/html_css_javascript_login_and_register.png" alt="Project Image">
+                                </div>
+                                <div class="title_projects">Inicio de Sesión y Registro </div>
+                                <div class="text_projects">
+                                    <p>
+                                        Este proyecto es un sistema básico de inicio de sesión y registro, desarrollado con HTML, CSS y JavaScript.
+                                        Permite a los usuarios registrarse y luego iniciar sesión a través de una interfaz simple e intuitiva.
+                                    </p>
+                                </div>
+                                <div class="skills_projects">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="project_links">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Login_and_Register"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Login_and_Register/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 4 -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="projects_container">
                             <div class="project">
@@ -339,93 +262,9 @@
                                 <div class="project_links">
                                     <a href="https://github.com/SiegBoss/HTML_and_CSS_Solar_System" target="_blank"
                                         rel="noopener noreferrer">
-                                        <!-- bi bi-github: BTP se utiliza para crear un icono de GitHub. -->
                                         <i class="bi bi-github"></i>
                                     </a>
                                     <a href="https://siegboss.github.io/HTML_and_CSS_Solar_System/" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <!-- bi bi-laptop: BTP se utiliza para crear un icono de Laptop. -->
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="projects_container">
-                            <div class="project">
-                                <div class="image_placeholder">
-                                    <img src="./images/html_css_javascript_login_and_register.png" alt="Project Image">
-                                </div>
-                                <div class="title_projects">Inicio de Sesión y Registro con Node.js V1</div>
-                                <div class="text_projects">
-                                    <p>
-                                        Este proyecto es un Sistema Web de Autenticación de Usuarios.
-                                        Se ha desarrollado tanto el Frontend como el Backend.
-                                    </p>
-                                    <p>
-                                        (La pagina se subio GitHub asi que no funciona el Backend)
-                                    </p>
-                                </div>
-                                <div class="skills_projects">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JavaScript</p>
-                                    <p>MongoDB</p>
-                                    <p>Node.js</p>
-                                    <p>Express.js</p>
-                                    <p>Mongoose</p>
-                                    <p>bcrypt</p>
-                                </div>
-                                <div class="project_links">
-                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Login_and_Register"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="./pages/login_and_register/login_and_register.html" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="projects_container">
-                            <div class="project">
-                                <div class="image_placeholder">
-                                    <img src="./images/html_css_javascript_mongodb.png" alt="Project Image">
-                                </div>
-                                <div class="title_projects">Sistema de Gestión de Usuarios con Node.js</div>
-                                <div class="text_projects">
-                                    <p>
-                                        Este proyecto es un sistema de gestión de usuarios que permite a
-                                        los usuarios realizar algunas operaciones (Crear, Leer y Eliminar) a través de
-                                        una interfaz web.
-                                    </p>
-                                    <p>
-                                        (La pagina se subio GitHub asi que no funciona el Backend)
-                                    </p>
-                                </div>
-                                <div class="skills_projects">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JavaScript</p>
-                                    <p>MongoDB</p>
-                                    <p>Node.js</p>
-                                    <p>Express.js</p>
-                                    <p>Mongoose</p>
-                                </div>
-                                <div class="project_links">
-                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_MongoDB" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="./pages/base_datos_mongodb/base_datos_mongodb.html" target="_blank"
                                         rel="noopener noreferrer">
                                         <i class="bi bi-laptop"></i>
                                     </a>
@@ -503,7 +342,69 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
+
+                    <!-- 7 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects_container">
+                            <div class="project">
+                                <div class="image_placeholder">
+                                    <img src="./images/html_css_javascript_caesar_cipher.png" alt="Project Image">
+                                </div>
+                                <div class="title_projects">Cifrado César </div>
+                                <div class="text_projects">
+                                    <p>
+                                        Este proyecto es una implementación del Cifrado César, desarrollada con HTML, CSS y JavaScript.
+                                        Permite a los usuarios cifrar y descifrar mensajes, eligiendo cuántas posiciones se desplazan los caracteres.
+                                    </p>
+                                </div>
+                                <div class="skills_projects">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="project_links">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Caesar_Cipher" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Caesar_Cipher/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- 8 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="projects_container">
+                            <div class="project">
+                                <div class="image_placeholder">
+                                    <img src="./images/html_css_javascript_uppercase_lowercase.png" alt="Project Image">
+                                </div>
+                                <div class="title_projects">Sistema de Gestión de Usuarios con Node.js</div>
+                                <div class="text_projects">
+                                    <p>
+                                        Este proyecto es una herramienta simple y útil para transformar texto utilizando HTML, CSS y JavaScript.
+                                        Incluye funcionalidades comunes como cambiar el estilo del texto, copiar/pegar, y alternar entre temas claro y oscuro.
+                                    </p>
+                                </div>
+                                <div class="skills_projects">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="project_links">
+                                    <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Uppercase_Lowercase" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Uppercase_Lowercase/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 <!--Microcontroladores-->
                 <div class="microcontrollers_projects row">
@@ -773,78 +674,6 @@
                     </div>
                 </div>
 
-                <!--Mecatronica-->
-                <div class="mechatronic_projects row">
-                    <!-- 1 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="projects_container">
-                            <div class="project">
-                                <div class="image_placeholder">
-                                    <img src="./images/sorting_machine.JPG" alt="Project Image">
-                                </div>
-                                <div class="title_projects">Diseño de una Cinta Trasportadora</div>
-                                <div class="skills_projects">
-                                    <p>SolidWorks</p>
-                                </div>
-                                <div class="project_links">
-                                    <div>
-                                        <i class="bi bi-image" onclick="openModal('./images/sorting_machine.JPG')"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="projects_container">
-                            <div class="project">
-                                <div class="image_placeholder">
-                                    <img src="./images/marmita.JPG" alt="Project Image">
-                                </div>
-                                <div class="title_projects">Diseño de una Marmita</div>
-                                <div class="skills_projects">
-                                    <p>SolidWorks</p>
-                                </div>
-                                <div class="project_links">
-                                    <div>
-                                        <i class="bi bi-image" onclick="openModal('./images/marmita.JPG')"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3 -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="projects_container">
-                            <div class="project">
-                                <div class="image_placeholder">
-                                    <img src="./images/labview.png" alt="Project Image">
-                                </div>
-                                <div class="title_projects">Sistema SCADA para Marmita</div>
-                                <div class="text_projects">
-                                    <p>
-                                        Este proyeco es la integracion de un Sistema SCADA para una marmita 
-                                        el cual  tiene todas sus etapas de control y monitoreo, asi como tambien 
-                                        alamacena los datos en una base datos .
-                                    </p>
-                                </div>
-                                <div class="skills_projects">
-                                    <p>LabVIEW</p>
-                                </div>
-                                <div class="project_links">
-                                    <a href="./pages/labview_scada_marmita/labview_scada_marmita.html" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="bi bi-image"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Modal -->
             <div class="modal" id="modal">
                 <span onclick="closeModal()" class="close-button">&times;</span>
@@ -872,40 +701,14 @@
     <!-- align-items-center: BPT se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
     <!-- justify-content-center: BTP se utiliza para alinear los elementos flexibles a lo largo del eje principal -->
     <footer id="contacto" class="d-flex flex-column align-items-center justify-content-center">
-        <img class="footer_icon" src="./images/round_willy_logo.png" alt="Logo de la Pagina">
+        <img class="footer_icon" src="./images/logo_willy.png" alt="Logo de la Pagina">
         <!-- text-center: BTP esta clase se utiliza para alinear el texto en el centro.. -->
         <p class="text-center">Tu versión de mañana debería poder vencer a tú versión de hoy</p>
-        <!-- text-center: BTP esta clase se utiliza para alinear el texto en el centro.. -->
-        <p class="footer_text text-center">Contactame</p>
-        <!-- d-flex: BTP se utiliza para crear un contenedor flexible. -->
-        <!-- flex-wrap: BTP esta clase se utiliza para permitir que los elementos flexibles se envuelvan en varias líneas. -->
-        <!-- align-items-center: BPT se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
-        <!-- justify-content-center: BTP se utiliza para alinear los elementos flexibles a lo largo del eje principal -->
-        <div class="social_media_icons d-flex flex-wrap align-items-center justify-content-center">
-            <a href="https://twitter.com/SiegBoss" target="_blank" rel="noopener noreferrer">
-                <!-- bi bi-twitter-x : BTP que crea un icono de Twitter. -->
-                <i class="bi bi-twitter-x"></i>
-            </a>
-            <a href="https://www.instagram.com/siegboss_xp/" target="_blank" rel="noopener noreferrer">
-                <!-- bi bi-instagram : BTP que crea un icono de Instagram. -->
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://github.com/SiegBoss" target="_blank" rel="noopener noreferrer">
-                <!-- bi bi-github : BTP que crea un icono de GitHub. -->
-                <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.tiktok.com/@siegboss" target="_blank" rel="noopener noreferrer">
-                <!-- bi bi-tiktok : BTP que crea un icono de TikTok. -->
-                <i class="bi bi-tiktok"></i>
-            </a>
-        </div>
         <div class="Copyright">
             creado por SiegBoss &#169; 2024
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./script/index.js"></script>
 </body>
 
