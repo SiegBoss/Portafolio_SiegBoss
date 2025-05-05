@@ -6,7 +6,6 @@ Bienvenido/a a mi portafolio personal, donde puedes explorar algunos de los proy
 
 - `index.html` : Página principal con la estructura HTML.
 - `index.css` : Estilos CSS para el diseño y presentación del portafolio.
-- `index.js` : Lógica de interactividad en la página.
 - `pages/` : Carpeta con páginas adicionales del portafolio.
 - `documents/` : Contiene mi currículum (CV).
 - `images/` : Imágenes relacionadas con proyectos y diseño visual.
@@ -36,7 +35,6 @@ Welcome to my personal portfolio, where you can explore some of the projects and
 
 - `index.html` : Main page with the HTML structure.
 - `index.css` : CSS styles for layout and design.
-- `index.js` : Interactivity logic for the page.
 - `pages/` : Folder containing additional pages.
 - `documents/` : Contains my CV.
 - `images/` : Images related to projects and design.
